@@ -3,6 +3,11 @@ import express from 'express';
 import { createHandler } from 'graphql-http/lib/use/express';
 import { ruruHTML } from 'ruru/server';
 
+/*
+    type Query {
+        rollDice(numDice: Int!, numSides: Int): [Int]
+    }
+*/
 
 const schema = new GraphQLSchema({
     query: new GraphQLObjectType({
